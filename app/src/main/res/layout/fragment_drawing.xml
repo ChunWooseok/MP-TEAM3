@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DrawingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/penBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="?attr/toolbarColor"
+            android:src="@android:drawable/ic_menu_edit"
+            android:tint="?attr/toolbarTextColor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/sizeUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="?attr/toolbarColor"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_up"
+                android:tint="?attr/toolbarTextColor" />
+
+            <ImageButton
+                android:id="@+id/sizeDownButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="?attr/toolbarColor"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_down"
+                android:tint="?attr/toolbarTextColor" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/eraserBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="?attr/toolbarColor"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_eraser"
+            android:tint="?attr/toolbarTextColor" />
+
+        <ImageButton
+            android:id="@+id/refreshBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="?attr/toolbarColor"
+            android:src="@android:drawable/ic_popup_sync"
+            android:tint="?attr/toolbarTextColor" />
+
+        <ImageButton
+            android:id="@+id/dSaveBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="?attr/toolbarColor"
+            android:src="@android:drawable/ic_menu_save"
+            android:tint="?attr/toolbarTextColor" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/canvasFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+
+
+</LinearLayout>

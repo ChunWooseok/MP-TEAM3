@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/toolbarColor"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        //**아이콘
+
+        <ImageView
+            android:id="@+id/ImageIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            app:tint="?attr/toolbarTextColor"
+            app:srcCompat="@drawable/icon_0" />
+        //**
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/toolbarColor"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/TextDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="?attr/toolbarColor"
+            android:backgroundTint="?attr/toolbarColor"
+            android:gravity="center"
+            android:text="날짜"
+            android:textColor="?attr/toolbarTextColor"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/toolbarColor" />
+
+        <ImageButton
+            android:id="@+id/Plusbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="?attr/toolbarColor"
+            android:tint="?attr/toolbarTextColor"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_rec">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_rec"
+            android:backgroundTint="?attr/edgeColor"
+            android:backgroundTintMode="multiply"
+            android:text="" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundColor">
+
+        <LinearLayout
+            android:id="@+id/ll_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_round"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="요약 "
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/EditTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_rec"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="?attr/textColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/layout_round"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 알람 "
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/edit_round"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:text="추가하기"
+                    android:textColor="?attr/toolbarTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ImageAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icon_trash" />
+
+                <Switch
+                    android:id="@+id/AlarmSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

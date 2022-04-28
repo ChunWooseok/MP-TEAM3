@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="toolbarColor">@color/black</item>
+        <item name="toolbarTextColor">@color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="textColor">@color/black</item>
+        <item name="subtextColor">@color/grey_3</item>
+        <item name="edgeColor">@color/grey_2</item>
+    </style>
+    <style name="LightTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="toolbarColor">@color/grey_1</item>
+        <item name="toolbarTextColor">@color/black</item>
+        <item name="android:statusBarColor">@color/grey_4</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="textColor">@color/black</item>
+        <item name="subtextColor">@color/grey_3</item>
+        <item name="edgeColor">@color/grey_2</item>
+    </style>
+    <style name="DarkTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="toolbarColor">@color/black</item>
+        <item name="toolbarTextColor">@color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="backgroundColor">@color/black</item>
+        <item name="textColor">@color/white</item>
+        <item name="subtextColor">@color/grey_3</item>
+        <item name="edgeColor">@color/white</item>
+    </style>
+    <style name="PinkTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="toolbarColor">@color/pink_2</item>
+        <item name="toolbarTextColor">@color/white</item>
+        <item name="android:statusBarColor">@color/pink_2</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="textColor">@color/pink_4</item>
+        <item name="subtextColor">@color/pink_3</item>
+        <item name="edgeColor">@color/pink_1</item>
+    </style>
+    <style name="PurpleTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="toolbarColor">@color/purple_2</item>
+        <item name="toolbarTextColor">@color/white</item>
+        <item name="android:statusBarColor">@color/purple_2</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="textColor">@color/purple_4</item>
+        <item name="subtextColor">@color/purple_3</item>
+        <item name="edgeColor">@color/purple_1</item>
+    </style>
+    <style name="BrownTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="toolbarColor">@color/brown_2</item>
+        <item name="toolbarTextColor">@color/white</item>
+        <item name="android:statusBarColor">@color/brown_2</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="textColor">@color/brown_4</item>
+        <item name="subtextColor">@color/brown_3</item>
+        <item name="edgeColor">@color/brown_1</item>
+    </style>
+</resources>
